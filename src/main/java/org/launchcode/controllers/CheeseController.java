@@ -45,7 +45,6 @@ public class CheeseController {
         model.addAttribute("title", "Add Cheese");
         model.addAttribute(new Cheese());
         model.addAttribute("categories", categoryDao.findAll());
-        System.out.println("hello");
         return "cheese/add";
     }
 
